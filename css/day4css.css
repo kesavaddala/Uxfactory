@@ -1,0 +1,9 @@
+p,div{border: 10px dotted blue;
+    padding: 20px;
+    margin: 100px;
+    text-align: center;
+    text-decoration: underline;
+    text-indent: 100px;
+    letter-spacing: 10px;
+    line-height: 1.5;
+}

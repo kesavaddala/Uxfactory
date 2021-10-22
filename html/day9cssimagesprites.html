@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        image sprites
+    </title>
+    <style>
+        #nav {
+            position: relative;
+        }
+
+        #nav li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+            top: 0;
+        }
+
+        #nav li,
+        #nav a {
+            height: 51px;
+            display: block;
+        }
+
+        #home {
+            left: -51px;
+            width: 98px;
+            background: url('../images/image_sprites.jpeg') 46px 0;
+        }
+
+        #search {
+            left: 46px;
+            width: 41px;
+            background: url('../images/image_sprites.jpeg') -61px 0;
+        }
+
+        #flag {
+            left: 97px;
+            width: 49px;
+            background: url('../images/image_sprites.jpeg') 49px -58px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="nav">
+        <li id="home">
+            <a href="https://www.google.com" target="_blank"></a>
+        </li>
+        <li id="search">
+            <a href="https://www.youtube.com/" target="_blank"></a>
+        </li>
+        <li id="flag">
+            <a href="https://en.wikipedia.org/wiki/India" target="_blank"></a>
+        </li>
+
+    </ul>
+</body>
+
+</html>

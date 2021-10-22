@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            css dropdown
+        </title>
+        <style>
+            .dropdown{
+                margin: 0px;
+                padding: 0px;
+                display: inline-block;
+            }
+            .dropdown .button{
+                background-color: crimson;
+                color: white;
+                border: 1px solid rgb(69, 97, 255);
+                font-size: 15px;
+                padding: 3px;
+            }
+            .category{
+                margin: 10px;
+                display: none;
+            }
+            .category a{
+                display: block;
+                text-decoration: none;
+                color: blue;
+                padding: 5px;
+                border: 2px solid cyan;
+                background-color: yellowgreen;
+              
+            }
+            .category a:hover{
+                color: blueviolet;
+            }
+            .dropdown:hover .category{
+                display: block;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="dropdown">
+            <button class="button">
+                MOBILES
+            </button>
+            <div class="category">
+                <a href="#">Iphone</a>
+                <a href="#">oneplus</a>
+                <a href="#">redmi</a>
+            </div>
+        </div>
+    </body>
+</html>

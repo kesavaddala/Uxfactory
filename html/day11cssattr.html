@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        css attributes
+    </title>
+    <style>
+        a[href] {
+            background-color: aqua;
+
+        }
+
+        a[target] {
+            background-color: red;
+        }
+
+        img[alt] {
+            border: 2px solid yellow;
+        }
+
+        img[alt=phone] {
+            border: 2px solid pink;
+        }
+
+        img[title~="lapy"] {
+            border: 3px dotted hotpink;
+        }
+
+        [class] {
+            background-color: salmon;
+        }
+
+        [class="text1"] {
+            background-color: seagreen;
+        }
+
+        [class~="text2"] {
+            background-color: skyblue;
+        }
+
+        [class^="t"] {
+            background-color: slateblue;
+        }
+
+        [class$="1"] {
+            background-color: rgb(71, 243, 255);
+        }
+
+        [class|="text5"] {
+            background-color: turquoise;
+        }
+
+        [class*="7"] {
+            background-color: springgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">google</a><br>
+    <a href="#" target="_blank">youtube</a><br>
+    <img src="../images/bag.jpeg" alt="bag">
+    <img src="../images/phone.jpeg" alt="phone">
+    <img src="../images/laptop.jpeg" title="lapy" alt="laptop">
+    <div class="text1">this is text</div>
+    <div class="text2" title="kes">this is text</div>
+    <div class="text3">this is text</div>
+    <div class="text4">this is text</div>
+    <div class="text5">this is text</div>
+    <div class="text67">this is tsxt</div>
+</body>
+
+</html>

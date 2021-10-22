@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>flex box</title>
+    <style>
+        #fruits{
+            background-color: violet;
+            display: flex;
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: wrap-reverse; */
+            justify-content: center;
+            height: 300px;
+        }
+        #fruits > div{
+            margin: 15px;
+            padding: 20px;
+            background-color: yellowgreen;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="fruits">
+        <div style="flex-shrink: 10;">
+            apple
+        </div>
+        <div style="flex-grow: 100;">
+            grapes
+        </div>
+        <div style="flex-basis: 50vh;">
+            banana
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        css responsive
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            text-align: center;
+            color: black;
+            text-decoration: underline;
+        }
+        h2{
+            color: black;
+        }
+        
+        .div {
+            float: left;
+            width: 25%;
+        }
+        @media only screen and (max-width: 600px) {
+            .div {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 600px) {
+            .div {
+                width: 50%;
+            }
+        }
+
+        @media only screen and (min-width: 778px) {
+            .div {
+                width: 33.3%;
+            }
+        }
+
+        @media only screen and (min-width: 998px) {
+            .div {
+                width: 25%;
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+            .div {
+                width: 16.6%;
+            }
+        }
+        img{margin: 10px;
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>online shopy</h1>
+    <div class="div" style="background-color: red;">
+        <a href="https://www.flipkart.com/" target="_blank">
+        <img src="../images/phone.jpeg" alt="phone">
+        <h2>iphone</h2>
+        </a>
+    </div>
+    <div class="div" style="background-color: rgb(166, 182, 28);">
+        <a href="https://www.flipkart.com/" target="_blank">
+        <img src="../images/laptop.jpeg" alt="laptop">
+        <h2>laptop</h2>
+        </a>
+    </div>
+    <div class="div" style="background-color: blue;">
+        <a href="https://www.flipkart.com/" target="_blank">
+        <img src="../images/bag.jpeg" alt="bag">
+        <h2>bag</h2>
+        </a>
+    </div>
+    <div class="div" style="background-color: rgb(117, 0, 128);">
+        <a href="https://www.flipkart.com/" target="_blank">
+        <img src="../images/ac.jpeg" alt="ac">
+        <h2>ac</h2>
+        </a>
+    </div>
+    <div class="div" style="background-color: rgb(0, 119, 128);">
+        <a href="https://www.flipkart.com/" target="_blank">
+        <img src="../images/fan.jpeg" alt="fan">
+        <h2>fan</h2>
+        </a>
+    </div>
+    <div class="div" style="background-color: rgb(128, 0, 90);">
+        <a href="https://www.flipkart.com/" target="_blank">
+        <img src="../images/bag1.jpeg" alt="bag">
+        <h2>bag</h2>
+        </a>
+    </div>
+</body>
+
+</html>

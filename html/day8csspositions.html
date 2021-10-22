@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            css postions
+        </title>
+        <style>
+            body{height: 1600px;
+                width: 1600px;
+            }
+            .static{
+                background-color: blue;
+                position: static;
+                top: 10px;
+                left: 30px;
+            }
+            .relative{
+                background-color:red;
+                position: relative;
+                top: 0px;
+                left: 40px;
+            }
+            .fixed{
+                background-color: yellow;
+                position: fixed;
+                bottom: 60px;
+            }
+            .absolute{
+                background-color:green;
+                position:absolute;
+            }
+            .div1{
+                background-color: hotpink;
+                margin: 5px;
+                position: relative;
+                z-index: 1;
+
+            }
+            .sticky{
+                background-color:rgb(0, 202, 175);
+                position: sticky;
+                top: 280px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="static">
+            <h1>this is static</h1>
+        </div>
+        <div class="relative">
+            <h1>this is relative</h1>
+        </div>
+        <div class="fixed">
+            <h1>this is fixed</h1>
+        </div>
+        <div class="absolute">
+            <h1>this is absolute</h1>
+             <div class="div1">
+                 <h2>this is div1</h2>
+             </div>
+        </div>
+        <div class="sticky">
+            <h1>this is sticky </h1>
+        </div>
+    </body>
+</html>
