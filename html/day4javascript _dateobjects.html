@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        date objects
+    </title>
+</head> 
+
+<body>
+    <div id="date"></div>
+    <div id="getmethods"></div>
+    <div id="getset"></div>
+    <script>
+        var x = new Date();
+        document.getElementById("date").innerHTML=x;
+        console.log(x)
+
+
+        var y = new Date(2021,1);
+        document.getElementById("date").innerHTML += "<br>" +y;
+        console.log(y)
+
+        var z = new Date('2020-1');
+        document.getElementById('date').innerHTML += "<br>" +z;
+        console.log(z)
+
+        document.getElementById("getmethods").innerHTML=x.getDate() +'-'+(x.getMonth()+1) +'-' + x.getFullYear();
+        console.log(x.getDate()+'/'+(x.getMonth()+1)+'/'+x.getFullYear());
+
+        var a=new Date();
+        a.setFullYear(1)
+        a.setMonth(0);
+        a.setDate(22);
+        a.setHours(1);
+        a.setMinutes(4);
+        a.setSeconds(3);
+        document.getElementById("getset").innerHTML=a;
+        console.log(a)
+
+    </script>
+
+</body>
+
+</html>

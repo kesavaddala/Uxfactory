@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        events
+    </title>
+
+</head>
+
+<body onload="window.alert('page loaded')" onresize="window.alert('resize')">
+    <input type="button" value="click me" name="submit" onclick="clickevent()"><br><br>
+    <!-- <input type="text"  onkeydown="keydown()"><br><br> -->
+    <!-- <input type="text" onkeyup="keyup()"> -->
+
+    <img class="images" src="../images/bag.jpeg" height="200px" width="200px" onmouseover="mouseover()"><br>
+    <img id="images" src="../images/bag.jpeg" height="200px" width="200px" onmouseleave="mouseleave()"
+        onmouseup="mouseup()" onmousedown="mousedown()" onkeydown="keydown()"><br>
+    <script>
+        function clickevent() {
+            alert("clickevent")
+        }
+        function mouseover() {
+            console.log(document.getElementsByClassName("images"));
+            document.getElementsByClassName("images")[0].src = "../images/fan.jpeg";
+        }
+        function mouseleave() {
+            document.getElementById("images").src = "../images/OnePlus-9-Pro.jpeg";
+        }
+        function mouseup() {
+            document.getElementById("images").src = "../images/laptop.jpeg";
+        }
+        function mousedown() {
+            document.getElementById('images').src = "../images/phone.jpeg";
+        }
+        function keydown() {
+            alert("keydown");
+        }
+        function keyup() {
+            alert("keyup");
+        }
+        function onchangeevent() {
+            alert(document.getElementById("drop").value);
+        }
+        function onsubmitevent() {
+            alert("form submitted");
+        }
+        function onfocusevent() {
+            document.getElementById("text1").style.background = "pink";
+        }
+        function onblurevent() {
+            document.getElementById("text1").style.background = "blue";
+        }
+
+
+    </script>
+    <select id="drop" onchange="onchangeevent()">
+        <option>pen</option>
+        <option>pencile</option>
+        <option>book</option>
+    </select><br><br>
+
+    <form id="submitevent" onsubmit="onsubmitevent()">
+        <label>firstname</label>
+        <input type="text2" name="firstname"><br><br>
+        <!-- <label>password</label><br><br> -->
+        <input type="submit" value="submit" name="submit"><br>
+    </form><br><br>
+    <input type="text" id="text1" onfocus="onfocusevent()" onblur="onblurevent()"><br>
+</body>
+
+</html>
