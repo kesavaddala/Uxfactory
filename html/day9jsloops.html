@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>loops</title>
+</head>
+
+<body>
+    <div id="tables"></div>
+    <script>
+        var x = 3;
+
+        for (var i = 1; i <= 10; i++) {
+            var y = x * i;
+            document.getElementById("tables").innerHTML += x+'*'+i + '='+ y+'<br>';
+        }
+
+        // var a = 10;
+        // for(i=0;i<=a;i++){
+        //     console.log(+i)
+        // }
+        
+        // var state = {
+        //     name: "ap",
+        //     pop: 90000,
+        // };
+        // var stdetails = "";
+        // for (var details in state){
+        //     stdetails += state[details]+ "" + "<br>";
+        // };
+        // document.getElementById("tables").innerHTML += stdetails+'<br>'+'<br>';
+
+
+
+        // let text="";
+        // let j= 0;
+        // while(j<=10){
+        //     text += "<br>the number is" +j;
+        //     j++;
+        // }
+        // document.getElementById("tables").innerHTML += text+'<br>'+'<br>';
+
+        // var b=11;
+        // var c= "";
+        // do{
+        //     c+="the num is" +b+ "<br>";
+        //     b++;
+        // }while(b<=20);
+        // document.getElementById("tables").innerHTML +=c + "<br>";
+
+        var l= 10;
+        for(i=1;i<=10;i++){
+
+            console.log(l+"*"+i+"="+l*i);
+
+        };
+        var m=20;
+        var n=1;
+        while (n<=10) {
+          console.log(m+"*"+n+"="+m*n);
+            n++;
+            
+        };
+        var p=30;
+        var q=1;
+        do{
+            console.log(p+"*"+q+"="+p*q);
+            q++;
+
+        }while (q<=10);
+
+    </script>
+
+</body>
+
+</html>

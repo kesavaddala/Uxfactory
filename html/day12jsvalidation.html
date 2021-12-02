@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>JS Validations</title>
+   <style>
+      .errortext {
+         color: red;
+         display: none;
+      }
+   </style>
+   <script>
+      function validateregform() {
+         var fname = document.forms["registrationForm"]["firstname"].value;
+
+         if (fname != "" && fname.length >= 8) {
+            document.getElementById("fnameerror").style.display = "none";
+         } else {
+            document.getElementById("fnameerror").style.display = "block";
+         }
+
+         var mname = document.forms["registrationForm"]["middlename"].value;
+         if (mname != "" && mname.length >= 8) {
+            document.getElementById("mnameerror").style.display = "none";
+         } else {
+            document.getElementById("mnameerror").style.display = "block";
+
+         }
+
+
+         var lname = document.forms["registrationForm"]["lastname"].value;
+
+         if (lname != "" && lname.length >= 8) {
+            document.getElementById("lnameerror").style.display = "none";
+         } else {
+            document.getElementById("lnameerror").style.display = "block";
+         }
+
+         var email = document.forms["registrationForm"]["email"].value;
+         var emailfilter = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+         if (email == "") {
+            document.getElementById("emailerror").style.display = "block";
+         } else if (!emailfilter.test(email)) {
+            document.getElementById("emailerror").style.display = "block";
+         } else {
+            document.getElementById("emailerror").style.display = "none";
+         }
+
+
+         var password = document.forms["registrationForm"]["password"].value;
+         if (password != "" && password.length >= 8) {
+            document.getElementById("passworderror").style.display = "none";
+         } else {
+            document.getElementById("passworderror").style.display = "block";
+         }
+
+
+         var confirmpassword = document.forms["registrationForm"]["confirmpassword"].value;
+         if (confirmpassword != "" && confirmpassword == password) {
+            document.getElementById("confirmpassworderror").style.display = "none";
+         } else {
+            document.getElementById("confirmpassworderror").style.display = "block";
+         }
+
+
+         var state = document.forms["registrationForm"]["state"].value;
+         if (state != "") {
+            document.getElementById("stateerror").style.display = "none";
+         } else {
+            document.getElementById("stateerror").style.display = "block";
+         }
+
+
+         var fav1 = document.forms["registrationForm"]["fav_language"][0].checked;
+         var fav2 = document.forms["registrationForm"]["fav_language"][1].checked;
+         var fav3 = document.forms["registrationForm"]["fav_language"][2].checked;
+         if ( fav1 || fav2 || fav3) {
+            document.getElementById("faverror").style.display = "none";
+         } else {
+            document.getElementById("faverror").style.display = "block";
+         }
+
+         var fav_location1 = document.forms["registrationForm"]["fav_location1"].checked;
+         var fav_location2 = document.forms["registrationForm"]["fav_location2"].checked;
+         var fav_location3 = document.forms["registrationForm"]["fav_location3"].checked;
+         if ( fav_location1 || fav_location2 || fav_location3 ) {
+            document.getElementById("locationerror").style.display = "none";
+         } else {
+            document.getElementById("locationerror").style.display = "block";
+         }
+         
+         
+
+         return false;
+         return true;
+      }
+
+   </script>
+</head>
+
+<body>
+   <form name="registrationForm" action="/registration.aspx" method="post" onsubmit="return validateregform()">
+      <label>Firstname:</label><br>
+      <input type="text" name="firstname" id="firstname"><br>
+      <span id="fnameerror" class="errortext">
+         Please enter firstname<br>
+         Firstname should be min 8 characters
+      </span><br>
+
+      <label>Middlename:</label><br>
+      <input type="text" name="middlename" id="middlename"><br>
+      <span id="mnameerror" class="errortext">
+         Please enter lastname<br>
+         Middlename should be min 8 characters
+      </span><br>
+
+      <label>Lastname:</label><br>
+      <input type="text" name="lastname" id="lasttname"><br>
+      <span id="lnameerror" class="errortext">
+         Please enter lastname<br>
+         Lastname should be min 8 characters
+      </span><br>
+
+      <label>Email Id</label><br>
+      <input type="text" name="email" id="email" oninput="validateregform()"><br>
+      <span id="emailerror" class="errortext">
+         Please enter a valid email address
+      </span><br>
+
+      <label>Password</label><br>
+      <input type="password" name="password" id="password" oninput="validateregform()"><br>
+      <span id="passworderror" class="errortext">
+         Please enter a valid password<br>
+         password should be min 8 characters
+      </span><br>
+
+      <label>Confirm Password</label><br>
+      <input type="password" name="confirmpassword" id="confirmpassword" oninput="validateregform()"><br>
+      <span id="confirmpassworderror" class="errortext">
+         Please Confirm password
+      </span><br>
+
+      <label>Choose a state</label><br>
+      <select id="state" name="state" onchange="validateregform()">
+         <option value="">please select</option>
+         <option value="andhra pradesh">andhra pradesh</option>
+         <option value="telangana">telangana</option>
+         <option value="tamilnadu">tamilnadu</option>
+      </select><br>
+      <span id="stateerror" class="errortext">
+         Please select your state
+      </span><br>
+
+      <p>choose your favorite web language:</p>
+      <input type="radio" id="html" name="fav_language" value="html" onclick="validateregform()">
+      <label for="html">html</label>
+      <input type="radio" id="css" name="fav_language" value="css" onclick="validateregform()">
+      <label for="css">css</label>
+      <input type="radio" id="javascript" name="fav_language" value="javascript" onclick="validateregform()">
+      <label for="javascript">javascript</label>
+      <br>
+      <span id="faverror" class="errortext">
+         Please select 
+      </span><br>
+
+
+      <p>please select your favorite locations</p>
+      <input type="checkbox" id="location" name="fav_location1" value="hyderabad" onclick="validateregform()">
+      <label for="hyderabad">hyderabad</label>
+      <input type="checkbox" id="location" name="fav_location2" value="chennai" onclick="validateregform()">
+      <label for="chennai">chennai</label>
+      <input type="checkbox" id="location" name="fav_location3" value="vijayawada" onclick="validateregform()">
+      <label for="vijayawada">vijayawada</label>
+      <br>
+      <span id="locationerror" class="errortext">
+         Please select 
+      </span><br>
+
+
+
+      <br /><br /><br />
+      <input type="submit" value="Submit" />
+   </form>
+</body>
+
+</html>

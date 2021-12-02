@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>gobal object and set time</title>
+</head>
+
+<body>
+    <div id="kes"></div>
+    <script>
+        console.log("global",this);
+
+        function number() {
+            var x=7;
+            var y=10;
+            console.log(this);
+        }
+        number();
+
+        var obj = {
+            student : "kesav",
+            batch: "nov",
+            year: "2021"
+        }
+        var studentname = obj.batch;
+        console.log(studentname);
+
+        console.log(window.location.href);
+
+    </script>
+</body>
+
+</html>

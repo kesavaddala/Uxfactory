@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>regex and js errors</title>
+</head>
+
+<body>
+    <div id="hello"></div>
+    <script>
+        var name = "kesav addala";
+        console.log(name.search("addala"));
+        console.log(name.replace("addala","A"));
+
+        const pattern = "r";
+        str = "ram";
+        console.log(str.match(pattern));
+
+
+
+        try{
+            alert("hello world");
+        }catch(err){
+            document.getElementById("hello").innerHTML = err.message;
+        }
+
+        
+        
+    </script>
+</body>
+
+</html>
