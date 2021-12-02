@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Z</title>
+    <link rel="stylesheet" href="../bootstrap-5.1.1-dist/css/bootstrap.css">
+    <script src="../bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
+    <style>
+        #h1 {
+            color: #ffc107;
+            font-size: 24px;
+
+
+        }
+
+        #nav {
+           background-color: #ffc107;
+        }
+
+        .px-4 {
+            padding-right: 0.5rem !important;
+            padding-left: 0.5rem !important;
+        }
+        #flex{
+            height: 280px;
+        }
+        #fleximage{
+            height: 280px;
+            width: 100%;
+        }
+        .nav-link{
+            color: white;
+        }
+        #discount{
+            width: 100%;
+            height: 200px;
+        }
+        #log{
+            color: white;
+            padding: 0px;
+        }
+        .input-group{
+            width: 20%;
+            float: right;
+            margin-top: 2px;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="h1" class="container text-center">
+            <b>A-Z Store</b>
+            <a class="btn btn-warning"  id="log" href="../html/loginpage.html" role="button">Login</a>
+            <!-- <div class="input-group">
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                aria-describedby="search-addon" />
+                <button type="button" class="btn btn-outline-primary">search</button>
+            </div> -->
+        </div>
+        <div id="nav">
+            <nav class="nav nav-pills nav-justified">
+                <a class="nav-link" href="../html/ecom1.html">Top Offers</a>
+                <a class="nav-link" href="../html/ecom2mobiles.html">Mobiles</a>
+                <a class="nav-link" href="../html/ecom3fashion.html">Fashion</a>
+                <a class="nav-link" href="../html/ecom4electronics.html">Electronics</a>
+                <a class="nav-link" href="../html/ecom5.html">Applliances</a>
+            </nav>
+        </div>
+        <div class="container-fluid pt-2">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner" id="flex">
+                    <div class="carousel-item active">
+                        <img src="../images/flex1.jpeg" class="d-block w-100" alt="..." id="fleximage">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/flex2.jpeg" class="d-block w-100" alt="..." id="fleximage"> 
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/flex3.jpeg" class="d-block w-100" alt="..." id="fleximage">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+        <div class="container p-2"><b>New Lunches</b></div>
+        <div class="containe-fluid">
+            <div class="container px-4">
+                <div class="row gx-5">
+                    <div class="col">
+                        <div class="p-3 border bg-warning">Apple</div>
+                        <img src="../images/phone.jpeg" id="discount">
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-warning">Samsung</div>
+                        <img src="../images/ac.jpeg" id="discount">
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-warning">Redmi</div>
+                        <img src="../images/bag.jpeg" id="discount">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container p-2"><b>Flagships Phones</b></div>
+        <div class="containe-fluid">
+            <div class="container px-4">
+                <div class="row gx-5">
+                    <div class="col">
+                        <div class="p-3 border bg-warning">Mi</div>
+                        <img src="../images/phone.jpeg" id="discount">
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-warning">Motorola</div>
+                        <img src="../images/ac.jpeg" id="discount">
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-warning">Realme</div>
+                        <img src="../images/bag.jpeg" id="discount">
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-warning">Asus</div>
+                        <img src="../images/bag.jpeg" id="discount">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container p-2"><b>Buget Phones</b></div>
+        <div class="containe-fluid">
+            <div class="container px-4">
+                <div class="row gx-5">
+                    <div class="col">
+                        <div class="p-3 border bg-warning">Samsung</div>
+                        <img src="../images/phone.jpeg" id="discount">
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-warning">Mi</div>
+                        <img src="../images/ac.jpeg" id="discount">
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-warning">Vivo</div>
+                        <img src="../images/bag.jpeg" id="discount">
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-warning">Realme</div>
+                        <img src="../images/bag.jpeg" id="discount">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer font-small unique-color-dark">
+                <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                    <a href="https://bootstrap.com/" style="color: white;"> Bootstrap.com</a>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+
+</body>
+
+</html>
